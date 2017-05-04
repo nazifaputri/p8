@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+int Tambah(int x, int y)
+{
+    int hasil;
+    hasil=x+y;
+    return hasil;
+}
+int Kurang(int x, int y)
+{
+    int hasil;
+    hasil=x-y;
+    return hasil;
+}
+int Kali(int x,int y)
+{
+    int hasil;
+    hasil=x*y;
+    return hasil;
+}
+int Bagi(int x,int y)
+{
+    int hasil;
+    hasil=x/y;
+    return hasil;
+}
+int Modulus(int x,int y)
+{
+    int hasil;
+    hasil=x%y;
+    return hasil;
+}
+
+int main()
+{
+    int bilangan1,bilangan2,hasil1,hasil2,hasil3,hasil4,hasil5;
+    cout<<"Masukkan Bilangan 1: ";
+    cin>>bilangan1;
+    cout<<"Masukkan Bilangan 2: ";
+    cin>>bilangan2;
+
+    hasil1=Tambah(bilangan1,bilangan2);
+    hasil2=Kurang(bilangan1,bilangan2);
+    hasil3=Kali(bilangan1,bilangan2);
+    hasil4=Bagi(bilangan1,bilangan2);
+    hasil5=Modulus(bilangan1,bilangan2);
+
+    cout<<endl<<"Hasil Tambah   : "<<hasil1;
+    cout<<endl<<"Hasil Kurang   : "<<hasil2;
+    cout<<endl<<"Hasil Kali     : "<<hasil3;
+    cout<<endl<<"Hasil Bagi     : "<<hasil4;
+    cout<<endl<<"Hasil Modulus  : "<<hasil5;
+}
+
