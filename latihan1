@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int Tambah(int x, int y)
+{
+    int hasil;
+    hasil=x+y;
+    return hasil;
+}
+
+int main()
+{
+    int bilangan1,bilangan2,HASIL;
+    cout<<"Masukkan Bilangan 1: ";
+    cin>>bilangan1;
+    cout<<"Masukkan Bilangan 2: ";
+    cin>>bilangan2;
+
+    HASIL=Tambah(bilangan1,bilangan2);
+
+    cout<<endl<<"Hasil adalah "<<HASIL;
+}
