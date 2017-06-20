@@ -1,0 +1,121 @@
+#include <iostream>
+using namespace std;
+
+float Nambah(float x, float y)
+{
+    float Hasil;
+    Hasil=x+y;
+    return Hasil;
+}
+
+float Ngurang(float x, float y)
+{
+    float Hasil;
+    Hasil=x-y;
+    return Hasil;
+}
+
+float Ngali(float x, float y)
+{
+    float Hasil;
+    Hasil=x*y;
+    return Hasil;
+}
+
+float Mbagi(float x, float y)
+{
+    float Hasil;
+    Hasil=x/y;
+    return Hasil;
+}
+
+int Modulus(int x, int y)
+{
+    int Hasil;
+    Hasil=x%y;
+    return Hasil;
+}
+
+int PilMenu()
+{
+    int Menu;
+    cout<<"0. Kuar"<<endl;
+    cout<<"1. Tambahin"<<endl;
+    cout<<"2. Kurangin"<<endl;
+    cout<<"3. Kaliin"<<endl;
+    cout<<"4. Bagiin"<<endl;
+    cout<<"5. Modulus"<<endl;
+    cout<<"Pilih yang mane tong? "<<endl;
+    cin>>Menu;
+    return Menu;
+}
+//------------***------------***------------//
+
+int main()
+{
+    int Menu, Bil1, Bil2, Hasil;
+
+    Menu=PilMenu();
+    while(Menu !=0)
+    {
+        if(Menu==1)
+        {
+            cout<<"Angka pertamanya berapa tong? ";
+            cin>>Bil1;
+            cout<<"Angka keduanya berapa tong? ";
+            cin>>Bil2;
+
+            Hasil = Nambah(Bil1,Bil2);
+            cout<<"Hasilnya nih tong = "<<Bil1<<" + "<<Bil2<<" = "<<Hasil;
+        }
+
+        if(Menu==2)
+        {
+            cout<<"Angka pertamanya berapa tong? ";
+            cin>>Bil1;
+            cout<<"Angka keduanya berapa tong? ";
+            cin>>Bil2;
+
+            Hasil = Ngurang(Bil1,Bil2);
+            cout<<"Hasilnya nih tong "<<Bil1<<" - "<<Bil2<<" = "<<Hasil;
+        }
+
+        if(Menu==3)
+        {
+            cout<<"Angka pertamanya berapa tong? ";
+            cin>>Bil1;
+            cout<<"Angka keduanya berapa tong? ";
+            cin>>Bil2;
+
+            Hasil = Ngali(Bil1,Bil2);
+            cout<<"Hasilnya nih tong "<<Bil1<<" * "<<Bil2<<" = "<<Hasil;
+        }
+
+        if(Menu==4)
+        {
+            cout<<"Angka pertamanya berapa tong? ";
+            cin>>Bil1;
+            cout<<"Angka keduanya berapa tong? ";
+            cin>>Bil2;
+
+            Hasil = Mbagi(Bil1,Bil2);
+            cout<<"Hasilnya nih tong "<<Bil1<<" / "<<Bil2<<" = "<<Hasil;
+        }
+
+        if(Menu==5)
+        {
+            cout<<"Angka pertamanya berapa tong? ";
+            cin>>Bil1;
+            cout<<"Angka keduanya berapa tong? ";
+            cin>>Bil2;
+
+            Hasil = Modulus(Bil1,Bil2);
+            cout<<"Hasilnya nih tong "<<Bil1<<" % "<<Bil2<<" = "<<Hasil;
+        }
+
+        cout<<endl;
+        cout<<"----------------------------";
+        cout<<endl;
+        Menu = PilMenu();
+    }
+}
